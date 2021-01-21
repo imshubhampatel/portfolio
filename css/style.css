@@ -65,7 +65,7 @@ hr{
 
 
 /* Navigation tag */
-.navigation{
+.navbar{
     background-color : var(--primary-color);
     display: flex;
     background-image: linear-gradient(315deg, #a4bfef 10%, var(--primary-color) 74%);
@@ -161,4 +161,11 @@ hr{
 .section .link-primary{
     margin : auto;  
 }
-
+.x-padding>li{
+    display: block;
+    padding: 1rem;
+}
+.x-padding>li>p{
+    display: block ;
+    padding: 1rem 0;
+}
