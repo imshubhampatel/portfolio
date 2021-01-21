@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root{
+    --heading:rgb(123, 123, 243);
+    --primary-color : #183181;
+    --gray-shade : #374151;
+    --offwhite : #E5E5E5;
+}
+
+/* Selecting Font */
+body{
+    font-family: 'PT Serif', serif;
+    margin : 0px;
+}
+
+#Header{
+    font-family: 'Arvo', serif;
+    }
+
+
+
+h1{
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+}
+.txt{
+    text-align:center;
+}
+
+.center{
+    text-align: center;
+}
+/* Containers */
+.container{
+    padding-left : 1rem;
+    padding-right : 1rem;
+}
+.center-container{
+    max-width : 600px;
+    margin : auto;
+}
+
+hr{
+    margin : 2.3rem 0rem; 
+}
+
+/* Link Section */
+.link{
+    text-decoration: none;
+    padding : 0.5rem 1rem;
+}
+.link-primary{
+    background-color : var(--primary-color);
+    border-radius : 0.5rem;
+    color : white;
+    border : 2px solid black;
+} 
+.link-secondary{
+    color : var(--primary-color);
+    border-radius: 0.5rem;
+    border : 2px solid var(--primary-color);
+}
+
+
+/* Navigation tag */
+.navigation{
+    background-color : var(--primary-color);
+    display: flex;
+    background-image: linear-gradient(315deg, #a4bfef 10%, var(--primary-color) 74%);
+    color : white;
+    box-shadow: 10px 10px 8px #b3afaff6;
+    border-bottom-left-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.733);
+}
+.list-non-bullet{
+    list-style : none;
+}
+.list-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+.nav-pills{
+    width: 45%;
+    text-align:right;
+}
+.nav-brand{
+    padding:1rem  1rem;
+    text-align: left;
+    width: 45%;
+    font-weight:700;
+    letter-spacing: 0.2rem;
+    font-size:1.6rem;
+}
+.nav-brand>span{
+    color:red;
+}
+.navigation .link{
+    color : white;
+    margin : auto;
+}
+.navigation .active-link{
+    font-weight: bold;
+
+}
+.space-list{
+    padding:2rem;
+}
+/* Hero  */
+ .hero{
+     padding: 2rem;
+ }
+ .hero-image{
+     max-width: 450px;
+     display:block;
+     margin:auto;
+ }
+
+ .hero-heading{
+    text-align:center;
+ 
+ }
+ .hero-heading>h2>span{
+     color: var(--heading);
+     margin: 0 0.5rem;
+ }
+ .hero>.hero-heading>h2{
+     color: #aaa;
+     margin: 0 auto;
+ }
+
+
+.section{
+    padding: 2rem;
+}
+.section h1{
+    text-align:center;
+    
+}
+.ow{
+    background-color: var(--offwhite);
+}
+.footer{
+    background-color: var(--primary-color);
+    color : white;
+    padding:2rem 0rem;
+    text-align:center;
+    border-top-right-radius: 1.5rem;
+    box-shadow: 10px 10px 8px #b3afaff6;
+    background-image: linear-gradient(315deg, #83aaee 10%, var(--primary-color) 64%);
+    border: 1px solid rgba(255, 255, 255, 0.733);
+}
+
+.footer a{
+    color : white; 
+}
+.footer ul{
+    padding-inline-start: 0px;
+}
+.section .link-primary{
+    margin : auto;  
+}
+
