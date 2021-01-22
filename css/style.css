@@ -107,6 +107,18 @@ hr{
 .space-list{
     padding:2rem;
 }
+.x-padding>li{
+    display: block;
+    padding: 1rem;
+}
+.x-padding>li>p{
+    display: block ;
+    padding: 1rem 0;
+}
+.x-padding>li>p{
+    letter-spacing: 0.1rem;
+}
+
 /* Hero  */
  .hero{
      padding: 2rem;
@@ -160,12 +172,4 @@ hr{
 }
 .section .link-primary{
     margin : auto;  
-}
-.x-padding>li{
-    display: block;
-    padding: 1rem;
-}
-.x-padding>li>p{
-    display: block ;
-    padding: 1rem 0;
 }
