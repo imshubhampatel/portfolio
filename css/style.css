@@ -6,7 +6,7 @@
     --primary-color : #183181;
     --gray-shade : #374151;
     --offwhite : #E5E5E5;
-}
+} 
 
 /* Selecting Font */
 body{
@@ -94,7 +94,7 @@ hr{
     font-size:1.6rem;
 }
 .nav-brand>span{
-    color:red;
+    color:blue;
 }
 .navigation .link{
     color : white;
