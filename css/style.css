@@ -81,7 +81,6 @@ ul>div>li {
     width: 100%;
     text-align: center;
     letter-spacing: 2px;
-    box-shadow:9px 1px 8px 1px #b3afaff6;;
     border: 1px solid rgba(255, 255, 255, 0.733);
 }
 .offwhitecenter{
@@ -90,7 +89,6 @@ ul>div>li {
     padding: 1rem 0rem;
     width: 100%;
     text-align: center;
-    box-shadow: 10px 10px 8px #b3afaff6;
     background-color: var(--offwhite);
     border: 1px solid rgba(255, 255, 255, 0.733);
 }
@@ -138,7 +136,7 @@ ul.nav-items{
 }
 
 .nav-brand>span {
-    color: blue;
+    color: rgb(235, 27, 183);
 }
 
 .space-list {
