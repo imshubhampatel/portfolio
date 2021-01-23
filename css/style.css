@@ -80,11 +80,13 @@ ul>div>li {
     padding: 1rem 0rem;
     width: 100%;
     text-align: center;
-    box-shadow: 10px 10px 8px #b3afaff6;
+    letter-spacing: 2px;
+    box-shadow:9px 1px 8px 1px #b3afaff6;;
     border: 1px solid rgba(255, 255, 255, 0.733);
 }
 .offwhitecenter{
     color:#000;
+    letter-spacing: 2px;
     padding: 1rem 0rem;
     width: 100%;
     text-align: center;
@@ -218,4 +220,16 @@ ul.nav-items{
 
 .footer ul {
     padding-inline-start: 0px;
+}
+
+
+/* blog section  */
+
+.blogfirst,.blogsecond,.blogthird{
+    background-color:#f5f5f7;
+    min-width: 700px;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    color: rgb(39, 38, 38);
 }
