@@ -210,7 +210,17 @@ ul.nav-items{
     background-image: linear-gradient(315deg, #83aaee 10%, var(--primary-color) 64%);
     border: 1px solid rgba(255, 255, 255, 0.733);
 }
+.link-primary{
+    transition: all 0.4s ease-in-out;
+    width: 200px;
+    border: none;
+}
 
+.link-primary:hover{
+    color:#ddd;
+    background: rgb(209, 104, 209);
+    font-size: 1.1rem;
+}
 
 .footer a {
     color: white;
