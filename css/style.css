@@ -57,13 +57,13 @@ hr{
     margin: 2.3rem 0rem;
 }
 
-a{
+a{ 
     color: white;
     display: inline-block;
     text-decoration: none;
-    padding: 0.5rem 0.2em;
-    letter-spacing: 0.1em;
-    font-size: 1rem;
+    padding: 0.5rem 0.3rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 0.2rem;
 }
@@ -99,10 +99,14 @@ ul>div>li {
 /* Link Section */
 
 .link-primary {
+    max-width: 183px;
     background-color: var(--primary-color);
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     color: white;
-    border: 2px solid black;
+    border: 2px solid rgb(10, 100, 136);
+    transition: all 0.4s ease-in-out;
+    padding: 15px;
+    
 }
 
 .link-secondary {
@@ -110,6 +114,7 @@ ul>div>li {
     border-radius: 0.5rem;
     border: 2px solid var(--primary-color);
 }
+
 
 /* Navigation tag */
 
@@ -120,7 +125,6 @@ ul>div>li {
     background-image: linear-gradient(315deg, #a4bfef 10%, var(--primary-color) 74%);
     color: white;
     box-shadow: 10px 10px 8px #b3afaff6;
-    border-bottom-left-radius: 1.5rem;
 }
 
 ul.nav-items{
@@ -136,11 +140,12 @@ ul.nav-items{
     text-align: left;
     width: 10%;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
 }
 
 .nav-brand>span {
-    color: rgb(235, 27, 183);
+    color: rgb(8, 72, 211);
 }
 
 .space-list {
@@ -214,10 +219,9 @@ ul.nav-items{
     background-image: linear-gradient(315deg, #83aaee 10%, var(--primary-color) 64%);
     border: 1px solid rgba(255, 255, 255, 0.733);
 }
-.link-primary{
-    transition: all 0.4s ease-in-out;
-    max-width: 50%;
-    border: none;
+.link-secondary{
+    padding: 15px;
+
 }
 
 .link-primary:hover{
@@ -244,4 +248,33 @@ ul.nav-items{
     letter-spacing: 1.5px;
     text-align: justify;
     color: rgb(39, 38, 38);
+}
+@media (max-width:501px){
+        *{
+            box-sizing: border-box;
+           
+        }
+
+    .navbar>.nav-brand{
+        font-size: 18px;
+    }
+    
+    .nav-items li a{
+        font-size: 14px;
+        padding: 0 1px;
+        letter-spacing: 1px;
+    }
+    .nav-items li{
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    p,li,a{
+        font-size: 10px;
+    }
+    .blogfirst{
+        width: 100%;
+    }
 }
