@@ -105,13 +105,13 @@ span {
     background-size: 100% 90%;
     width: 100%;
     height: 370px;
-    margin: 3rem auto 0 auto;
+    margin: 3rem auto 1rem auto;
     /* border: 2px solid blue; */
 }
 
 .webdee {
     text-align: center;
-    margin-bottom: 3rem;
+    margin: 3rem;
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
@@ -123,8 +123,11 @@ span {
 
 .skills {
     /* border: 2px solid orange; */
+    max-width: 1000px;
+    min-width: 960px;
     display: flex;
     flex-direction: row;
+    margin: 4rem 0;
     justify-content: space-between;
 }
 
@@ -154,7 +157,7 @@ section {
 section h1 {
     font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: left;
-    margin: 3rem 0 1rem 0;
+    margin: 3rem 0 2rem 0;
     font-size: 2.3rem;
     font-weight: 600;
     color: var(--isGray);
@@ -164,7 +167,7 @@ section h1 {
 section a{
     color: var(--links);
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 1.6rem;
 }
 
 section>p {
@@ -207,4 +210,15 @@ section {
 .social-links{
     font-weight: 400;
     padding-bottom: 2rem;
+}
+.image{
+    width: 100%;
+    height: 35rem;
+    background: url("https://wallpapercave.com/wp/wp8411238.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 6rem;
+
+
 }
