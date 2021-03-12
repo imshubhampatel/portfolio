@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Lobster&family=PT+Serifdisplay=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Redressedr&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --background: #fff;
     --isWhite: #fbfbfb;
@@ -10,29 +16,38 @@
     --black: #000;
     --lightBlack: #333;
     --isBalck: #222;
+    --isBlackOp: rgba(0, 0, 0, 0.39);
     --isGray: rgb(48, 41, 41);
-    --blue: rgb(0, 153, 255);
-    --isBlue: rgb(38, 0, 255);
-    --isBackground: rgb(207 207 207 / 17%);
-    --links:#0067b8;
+    --blue: #0067b8;
+    --isBlue: #0068b8a2;
+    --isBackground: rgb(207 207 207 / 50%);
+    --links: #0067b8;
 }
 
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap'); */
 
 html {
     font-size: 62.5%;
 }
 
-span{
+.nav-brand {
+    /* font-family: 'Redressed', cursive;? */
+    font-family: 'Lobster', cursive;
+
+}
+
+.webdee {
     font-family: 'Lobster', cursive;
 }
-.nav-brand::first-letter{
+
+span {
+    font-family: 'Lobster', cursive;
+}
+
+.nav-brand::first-letter {
     font-size: 2.5rem;
 }
+
 /* Selecting Font */
 
 body {
@@ -42,24 +57,22 @@ body {
 
 /* utilites defining here  */
 
-
 li, a, p {
     color: var(--black);
     font-size: 1.6rem;
-    letter-spacing: 0.1rem;
     text-decoration: none;
     list-style: none;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-
 
 /* defining containers and container  */
 
 .container {
-    max-width: 1000px;
-    min-width: 100px;
+    max-width: 101rem;
+    min-width: 101rem;
     margin: 0 auto;
 }
 
@@ -70,22 +83,30 @@ a:hover{
 /* #navbar coding */
 
 nav {
-    padding: 0px 10px;
-    margin-top: 2rem;
+    padding: 0rem 1rem;
+    margin-top: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    justify-items: center;
     align-items: center;
+    align-content: center;
+    font-weight: 400;
 }
 
 .nav-items>li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 2rem;
+    font-weight: 400;
+    letter-spacing: 0rem;
+    font-family: "Montserrat",sans-serif;
 }
 
 .nav-brand {
-    font-size: 20px;
+    font-size: 2rem;
+    padding-bottom: 0.8rem;
     letter-spacing: 0.3rem;
     font-weight: 600;
+    margin-right: 2rem;
 }
 
 span {
@@ -100,12 +121,14 @@ span {
 
 .hero {
     display: inline-block;
-    background: linear-gradient(to right, var(--isBackground), var(--isBackground)), url("../images/wallpaper.svg");
+    background: linear-gradient(to right, var(--isBlackOp), var(--isBackground)), url("https://wallpapercave.com/wp/wp8411238.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 90%;
+    background-size: cover;
+    background-position: center;
+    /* background-size: 100% 90%; */
     width: 100%;
-    height: 370px;
-    margin: 3rem auto 1rem auto;
+    height: 38rem;
+    margin: 0.8rem auto 1rem auto;
     /* border: 2px solid blue; */
 }
 
@@ -123,14 +146,13 @@ span {
 
 .skills {
     /* border: 2px solid orange; */
-    max-width: 1000px;
-    min-width: 960px;
+    max-width: 100rem;
+    min-width: 96rem;
     display: flex;
     flex-direction: row;
     margin: 4rem 0;
     justify-content: space-between;
 }
-
 
 /* section styling is here  */
 
@@ -142,7 +164,7 @@ section {
     text-align: left;
     line-height: 3rem;
     letter-spacing: 0.1rem;
-    margin: 20px 0px;
+    margin: 2rem 0rem;
 }
 
 .images {
@@ -150,12 +172,11 @@ section {
 }
 
 .images>img {
-    width: 200px;
-    height: 130px;
+    width: 20rem;
+    height: 13rem;
 }
 
 section h1 {
-    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: left;
     margin: 3rem 0 2rem 0;
     font-size: 2.3rem;
@@ -164,7 +185,7 @@ section h1 {
     letter-spacing: 0.185rem;
 }
 
-section a{
+section a {
     color: var(--links);
     display: inline-block;
     margin-top: 1.6rem;
@@ -180,45 +201,48 @@ section {
 
 /* footer styling  is here  */
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: var(--isBackground);
 }
-.footer li{
-    display: inline-block;
-    margin: 10px 20px;
 
+.footer li {
+    display: inline-block;
+    margin: 1rem 2rem;
 }
-.footer a{
+
+.footer a {
     color: var(--blue);
 }
-.ftr-header{
-    margin:2rem 0 1rem 0;
+
+.ftr-header {
+    margin: 2rem 0 1rem 0;
     font-size: 2rem;
     font-weight: 600;
     color: var(--isGray);
     letter-spacing: 0.3rem;
-
 }
-.c-ftr{
+
+.c-ftr {
     min-width: 112.2rem;
     height: auto;
 }
-.social-links{
+
+.social-links {
     font-weight: 400;
     padding-bottom: 2rem;
 }
-.image{
+
+.image {
     width: 100%;
     height: 35rem;
-    background: url("https://wallpapercave.com/wp/wp8411238.jpg");
-    background-size: cover;
+    background: linear-gradient(to left, var(--isBlackOp), var(--isBlackOp)), url("../images/wallpaper.svg");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 6rem;
-
-
+    margin: 6rem 0rem;
 }
+
